@@ -55,8 +55,26 @@ public class EratoshenesPrimeSieve implements PrimeSieve
                     }
                 }
             }
+            
+            for(int x = 2; x<=p; x++)
+            {
+                if(prime[x]) 
+                {
+                    System.out.println(x + " ");
+                }
+            }
+            return false;
+            
         }
-
+        
+    //------------------------------main-----------------------------
+        public static void main(String[] args) 
+        {
+           
+        }
+    //---------------------------------------------------------------
+        
+        
         @Override
         public void printPrimes() 
         {
