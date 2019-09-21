@@ -11,7 +11,7 @@ import net.htlgrieskirchen.asturm.git.eratosthenesprimesieve.PrimeSieve;
  *
  * @author asturm
  */
-public class EratoshenesPrimeSieve implements PrimeSieve 
+public class EratosthenesPrimeSieve implements PrimeSieve 
 {
 
 //-----------------------Interface-----------------------------
@@ -24,12 +24,14 @@ public class EratoshenesPrimeSieve implements PrimeSieve
         }
     //-------------------------------------------------------------
 
-        int upperBorder;
+        
         
     //------------------------Constructor--------------------------
-        public EratoshenesPrimeSieve(int upperBorder)
+        public EratosthenesPrimeSieve(int upperBorder)
         {
-            this.upperBorder = upperBorder;
+            
+            
+            isPrime(2);
         }
     //-------------------------------------------------------------
         
@@ -67,13 +69,6 @@ public class EratoshenesPrimeSieve implements PrimeSieve
             
         }
         
-    //------------------------------main-----------------------------
-        public static void main(String[] args) 
-        {
-           
-        }
-    //---------------------------------------------------------------
-        
         
         @Override
         public void printPrimes() 
@@ -83,6 +78,13 @@ public class EratoshenesPrimeSieve implements PrimeSieve
             
         }
     //-------------------------------------------------------------
+        
+    //------------------------------main-----------------------------
+        public static void main(String[] args) 
+        {
+            EratosthenesPrimeSieve eps = new EratosthenesPrimeSieve(100);
+        }
+    //---------------------------------------------------------------
     
 
     
