@@ -29,9 +29,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
     //------------------------Constructor--------------------------
         public EratosthenesPrimeSieve(int upperBorder)
         {
-            
-            
-            isPrime(2);
+             isPrime(upperBorder);
         }
     //-------------------------------------------------------------
         
@@ -65,7 +63,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
                     System.out.println(x + " ");
                 }
             }
-            return false;
+            return true;
             
         }
         
