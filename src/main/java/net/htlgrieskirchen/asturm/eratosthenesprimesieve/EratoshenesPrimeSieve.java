@@ -13,7 +13,8 @@ import net.htlgrieskirchen.asturm.git.eratosthenesprimesieve.PrimeSieve;
  */
 public class EratoshenesPrimeSieve implements PrimeSieve 
 {
-    //-----------------------Interface-----------------------------
+
+//-----------------------Interface-----------------------------
         public interface PrimeSieve
         {
             //Überprüft ob p eine Primzahl ist oder nicht.
@@ -23,20 +24,33 @@ public class EratoshenesPrimeSieve implements PrimeSieve
         }
     //-------------------------------------------------------------
 
-    //---------------------abstract methods------------------------
-        @Override
-        public boolean isPrime(int p) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        @Override
-        public void printPrimes() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int upperBorder;
+        
+    //------------------------Constructor--------------------------
+        public EratoshenesPrimeSieve(int upperBorder)
+        {
+            this.upperBorder = upperBorder;
         }
     //-------------------------------------------------------------
         
+    //---------------------abstract methods------------------------
+        @Override
+        public boolean isPrime(int p) 
+        {
+            
+            
+            
+        }
+
+        @Override
+        public void printPrimes() 
+        {
+
+            
+            
+        }
+    //-------------------------------------------------------------
     
-    
-    
+
     
 }
