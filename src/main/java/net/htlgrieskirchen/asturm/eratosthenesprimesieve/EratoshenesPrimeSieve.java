@@ -38,8 +38,23 @@ public class EratoshenesPrimeSieve implements PrimeSieve
         public boolean isPrime(int p) 
         {
             
+            boolean prime[] = new boolean[p+1];
             
+            for(int i = 2; i <= p; i++)
+            {
+                prime[i] = true;
+            }
             
+            for(int j = 2; j <= Math.sqrt(p); j++)
+            {
+                if(prime[j])
+                {
+                    for(int k = j; k*j <= p; k++)
+                    {
+                        prime[k*j] = false;
+                    }
+                }
+            }
         }
 
         @Override
