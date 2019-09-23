@@ -5,26 +5,14 @@
  */
 package net.htlgrieskirchen.asturm.eratosthenesprimesieve;
 
-import net.htlgrieskirchen.asturm.git.eratosthenesprimesieve.PrimeSieve;
+import net.htlgrieskirchen.asturm.eratosthenesprimesieve.PrimeSieve;
 
 /**
  *
  * @author asturm
  */
-public class EratosthenesPrimeSieve implements PrimeSieve 
-{
-
-//-----------------------Interface-----------------------------
-        public interface PrimeSieve
-        {
-            //Überprüft ob p eine Primzahl ist oder nicht.
-                public boolean isPrime(int p);
-            //Gibt alle Primzahlen bis zur Obergrenze auf der Konsole aus.
-                public void printPrimes();
-        }
-    //-------------------------------------------------------------
-
-        
+public class EratosthenesPrimeSieve implements PrimeSieve
+{      
         
     //------------------------Constructor--------------------------
         public EratosthenesPrimeSieve(int upperBorder)
@@ -81,6 +69,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
         public static void main(String[] args) 
         {
             EratosthenesPrimeSieve eps = new EratosthenesPrimeSieve(100);
+            
         }
     //---------------------------------------------------------------
     
