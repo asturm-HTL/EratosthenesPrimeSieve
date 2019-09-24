@@ -52,7 +52,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
                 if(prime[x]) 
                 {
                     System.out.println(x + " ");
-                    
+                                primeList.add(x);
                 }
             }
             return true;
