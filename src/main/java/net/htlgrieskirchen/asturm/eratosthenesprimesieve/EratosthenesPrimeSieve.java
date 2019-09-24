@@ -21,6 +21,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
         public EratosthenesPrimeSieve(int upperBorder)
         {
              isPrime(upperBorder);
+             naturalNumberDivider(upperBorder);
         }
     //-------------------------------------------------------------
         
@@ -77,6 +78,24 @@ public class EratosthenesPrimeSieve implements PrimeSieve
         }
     //---------------------------------------------------------------
     
+    //----------------NaturalNumbersXPrimeNumbers--------------------
+        
+        public void naturalNumberDivider(int m)     
+        {
+            //m ist Obergrenze
+            int x;
+            int y;
+            
+            for(int i = 2; i < m; i+=2)
+            {
+                   
+                if(primeList.contains(i))
+                {
+                    System.out.println(i + " = " + i);
+                }
+                System.out.println("Test");
+            }
+                
+        }
+    }
 
-    
-}
