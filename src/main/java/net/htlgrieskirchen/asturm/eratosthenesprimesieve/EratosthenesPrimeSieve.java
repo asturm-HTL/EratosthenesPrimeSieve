@@ -83,8 +83,8 @@ public class EratosthenesPrimeSieve implements PrimeSieve
         public void naturalNumberDivider(int m)     
         {
             //m ist Obergrenze
-            int x;
-            int y;
+            int x = 0;
+            int y = 0;
             
             for(int i = 2; i < m; i+=2)
             {
@@ -92,8 +92,27 @@ public class EratosthenesPrimeSieve implements PrimeSieve
                 if(primeList.contains(i))
                 {
                     System.out.println(i + " = " + i);
+                    
                 }
-                System.out.println("Test");
+                else
+                {
+                    int zwischenspeicher = i;
+                    int zwischenspeicher2 = i;
+                    for(int j = zwischenspeicher2; j!= 0; j-=1)
+                    {
+                        if(primeList.contains(j))
+                        {
+                            y = zwischenspeicher - j;
+                            x = j;
+                            
+                            System.out.println(i + " = " + x + " + " + y);
+                            zwischenspeicher2 = 0;
+                        }
+                        
+                        
+                    }
+                    
+                }
             }
                 
         }
