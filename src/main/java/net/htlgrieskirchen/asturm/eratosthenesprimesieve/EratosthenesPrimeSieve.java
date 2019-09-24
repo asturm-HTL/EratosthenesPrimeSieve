@@ -64,15 +64,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
         public void printPrimes() 
         {
 
-           //Methode in isPrime
             
-            
-            
-            /*int n = 18; //gerade Zahl, die geteilt wid
-            int x = 0;
-            int y = 0;
-            
-            for(int i = n; i)*/
             
         }
     //-------------------------------------------------------------
