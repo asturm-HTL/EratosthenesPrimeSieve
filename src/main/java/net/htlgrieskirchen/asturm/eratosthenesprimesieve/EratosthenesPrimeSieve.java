@@ -102,10 +102,15 @@ public class EratosthenesPrimeSieve implements PrimeSieve
                     {
                         if(primeList.contains(j))
                         {
+                           if(primeList.contains(zwischenspeicher - j))
+                           {
                             y = zwischenspeicher - j;
                             x = j;
-                            
                             System.out.println(i + " = " + x + " + " + y);
+                           }
+                           
+                            
+                           
                             zwischenspeicher2 = 0;
                         }
                         
