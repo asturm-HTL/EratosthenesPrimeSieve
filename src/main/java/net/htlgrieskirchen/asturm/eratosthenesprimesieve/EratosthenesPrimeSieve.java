@@ -5,6 +5,7 @@
  */
 package net.htlgrieskirchen.asturm.eratosthenesprimesieve;
 
+import java.util.ArrayList;
 import net.htlgrieskirchen.asturm.eratosthenesprimesieve.PrimeSieve;
 
 /**
@@ -14,6 +15,8 @@ import net.htlgrieskirchen.asturm.eratosthenesprimesieve.PrimeSieve;
 public class EratosthenesPrimeSieve implements PrimeSieve
 {      
         
+    ArrayList primeList = new ArrayList();
+    
     //------------------------Constructor--------------------------
         public EratosthenesPrimeSieve(int upperBorder)
         {
@@ -49,6 +52,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve
                 if(prime[x]) 
                 {
                     System.out.println(x + " ");
+                    
                 }
             }
             return true;
@@ -60,7 +64,15 @@ public class EratosthenesPrimeSieve implements PrimeSieve
         public void printPrimes() 
         {
 
-           
+           //Methode in isPrime
+            
+            
+            
+            /*int n = 18; //gerade Zahl, die geteilt wid
+            int x = 0;
+            int y = 0;
+            
+            for(int i = n; i)*/
             
         }
     //-------------------------------------------------------------
